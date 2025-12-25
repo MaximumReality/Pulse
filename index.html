@@ -1,192 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Maximum Reality — Novel by Lori Sifuentes</title>
-<style>
+  <meta charset="UTF-8">
+  <title>Maximum Reality — Prologue</title>
+  <style>
     body {
-        margin: 0;
-        padding: 2rem;
-        font-family: Georgia, serif;
-        background-color: #0a0a0a;
-        color: #eee;
-        overflow-x: hidden;
-        position: relative;
+      font-family: Georgia, serif;
+      background-color: #111;
+      color: #eee;
+      line-height: 1.6;
+      padding: 2rem;
     }
-
-    /* Animated background canvas */
-    canvas#threads {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        pointer-events: none;
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #ffcc66;
+      margin-bottom: 1rem;
     }
-
-    header {
-        text-align: center;
-        margin-bottom: 2rem;
-        position: relative;
-        z-index: 1;
+    p {
+      margin-bottom: 1rem;
     }
-    header img {
-        max-width: 300px;
-        border: 3px solid #ffcc00;
-        border-radius: 10px;
-        margin-bottom: 1rem;
-        box-shadow: 0 0 20px #ffcc00;
+    .video-box {
+      max-width: 640px;
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 2px solid #66ffcc;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #ffcc00;
+      background: rgba(0,0,0,0.7);
+      text-align: center;
     }
-    header h1 {
-        font-size: 2.2rem;
-        color: #ffcc00;
-        margin-bottom: 0.5rem;
+    .video-box h2 {
+      color: #ffcc66;
+      margin-bottom: 1rem;
     }
-    header p {
-        font-size: 1rem;
-        color: #66ffcc;
+    .video-box p {
+      color: #66ffcc;
+      margin-top: 0.5rem;
     }
-    nav {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        max-width: 600px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 1;
+    .chapter-list {
+      margin-top: 2rem;
     }
-    nav a {
-        display: block;
-        padding: 0.7rem 1rem;
-        color: #ff99cc;
-        background: rgba(255,255,255,0.05);
-        text-decoration: none;
-        border-left: 4px solid #66ffcc;
-        transition: all 0.3s ease;
+    .chapter-list a {
+      display: block;
+      color: #66ffcc;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
     }
-    nav a:hover {
-        background: rgba(255,255,255,0.15);
-        color: #ffd700;
-        border-left: 4px solid #ffd700;
-        transform: translateX(5px);
+    .chapter-list a:hover {
+      color: #ffcc66;
     }
-    footer {
-        text-align: center;
-        margin-top: 3rem;
-        padding-top: 1rem;
-        border-top: 1px solid #333;
-        color: #888;
-        font-size: 0.85rem;
-        position: relative;
-        z-index: 1;
-    }
-</style>
+  </style>
 </head>
 <body>
 
-<canvas id="threads"></canvas>
+<h1>Maximum Reality — Prologue</h1>
 
-<header>
-    <img src="cover.png" alt="Maximum Reality Cover">
-    <h1>Maximum Reality</h1>
-    <p>A novel by <strong>Lori Sifuentes</strong> — 2025<br>
-    Explore fractured selves, cosmic threads, and the infinite power of the Loom.</p>
-</header>
+<p>Welcome to the threads of Maximum Reality, a multiversal journey through time, consciousness, and infinite possibility, crafted by Lori Sifuentes, 2025. Each chapter weaves together the lives, fears, and triumphs of Nora across realities, culminating in the ultimate awakening of the Loom.</p>
 
-<nav>
-    <a href="chapter1.html">Chapter 1 — The Ashen Road</a>
-    <a href="chapter2.html">Chapter 2 — The First Bond</a>
-    <a href="chapter3.html">Chapter 3 — Ash and Blood</a>
-    <a href="chapter4.html">Chapter 4 — The Gathering Fire</a>
-    <a href="chapter5.html">Chapter 5 — Before the Storm</a>
-    <a href="chapter6.html">Chapter 6 — The Fortress Above</a>
-    <a href="chapter7.html">Chapter 7 — The Shatter Between Worlds</a>
-    <a href="chapter8.html">Chapter 8 — The Veil of Immensity</a>
-    <a href="chapter9.html">Chapter 9 — Between Two Worlds</a>
-    <a href="chapter10.html">Chapter 10 — The Threshold Beyond</a>
-    <a href="chapter11.html">Chapter 11 — The Ocean of Threads</a>
-    <a href="chapter12.html">Chapter 12 — The Coming of the Unmakers</a>
-    <a href="chapter13.html">Chapter 13 — The Drowning of Light</a>
-    <a href="chapter14.html">Chapter 14 — The Hollow Silence</a>
-    <a href="chapter15.html">Chapter 15 — The Realm Beneath Realms</a>
-    <a href="chapter16.html">Chapter 16 — The Root of All Things</a>
-    <a href="chapter17.html">Chapter 17 — The Thread Between</a>
-    <a href="chapter18.html">Chapter 18 — Threads in Tandem</a>
-    <a href="chapter19.html">Chapter 19 — Fever and Threads</a>
-    <a href="chapter20.html">Chapter 20 — Threads Between Worlds</a>
-    <a href="chapter21.html">Chapter 21 — The Unraveling</a>
-    <a href="chapter22.html">Chapter 22 — Fractures in Time</a>
-    <a href="chapter23.html">Chapter 23 — The Nexus of Selves</a>
-    <a href="chapter24.html">Chapter 24 — Assault Across the Weave</a>
-    <a href="chapter25.html">Chapter 25 — The Shattered Convergence</a>
-    <a href="chapter26.html">Chapter 26 — Baby Threads</a>
-    <a href="chapter27.html">Chapter 27 — Threads in Tiny Hands</a>
-    <a href="chapter28.html">Chapter 28 — Shadows at the Edge</a>
-    <a href="chapter29.html">Chapter 29 — Flickers in the Mind</a>
-    <a href="chapter30.html">Chapter 30 — Awakening Threads</a>
-    <a href="chapter31.html">Chapter 31 — Convergence of Shadows</a>
-    <a href="chapter32.html">Chapter 32 — Blackened Strands and New Horizons</a>
-    <a href="chapter33.html">Chapter 33 — Weaving the Fractured</a>
-    <a href="chapter34.html">Chapter 34 — The Assault Across Threads</a>
-    <a href="chapter35.html">Chapter 35 — The Crucible of Threads</a>
-    <a href="chapter36.html">Chapter 36 — The Loom Unleashed</a>
-    <a href="chapter37.html">Chapter 37 — Architect of the Loom</a>
-    <a href="chapter38.html">Chapter 38 — The Heart of the Loom</a>
-    <a href="epilogue.html">Epilogue</a>
-</nav>
+<div class="video-box">
+  <h2>Featured Song — The Loom Theme</h2>
+  <iframe width="100%" height="360" src="https://www.youtube.com/embed/mPrFvkLQwZc" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen style="border-radius: 8px;">
+  </iframe>
+  <p>Listen while exploring the threads of Maximum Reality.</p>
+</div>
 
-<footer>
-    &copy; 2025 Lori Sifuentes. Maximum Reality is a work of fiction. All rights reserved.
-</footer>
-
-<script>
-const canvas = document.getElementById('threads');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-const threads = [];
-const NUM_THREADS = 80;
-
-for(let i = 0; i < NUM_THREADS; i++) {
-    threads.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        vx: (Math.random()-0.5)*0.4,
-        vy: (Math.random()-0.5)*0.4,
-        length: Math.random()*50 + 50,
-        color: `hsl(${Math.random()*360}, 80%, 60%)`,
-        alpha: Math.random()*0.5+0.3
-    });
-}
-
-function draw() {
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    for(let t of threads) {
-        ctx.beginPath();
-        ctx.moveTo(t.x, t.y);
-        ctx.lineTo(t.x + t.vx*t.length, t.y + t.vy*t.length);
-        ctx.strokeStyle = t.color;
-        ctx.globalAlpha = t.alpha;
-        ctx.lineWidth = 1.5;
-        ctx.stroke();
-        t.x += t.vx;
-        t.y += t.vy;
-
-        if(t.x < 0 || t.x > canvas.width) t.vx *= -1;
-        if(t.y < 0 || t.y > canvas.height) t.vy *= -1;
-    }
-    requestAnimationFrame(draw);
-}
-
-draw();
-
-window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
-</script>
+<div class="chapter-list">
+  <h2>Chapters</h2>
+  <a href="chapter1.html">Chapter 1 — The Ashen Road</a>
+  <a href="chapter2.html">Chapter 2 — The First Bond</a>
+  <a href="chapter3.html">Chapter 3 — Ash and Blood</a>
+  <a href="chapter4.html">Chapter 4 — The Gathering Fire</a>
+  <a href="chapter5.html">Chapter 5 — Before the Storm</a>
+  <a href="chapter6.html">Chapter 6 — The Fortress Above</a>
+  <a href="chapter7.html">Chapter 7 — The Shatter Between Worlds</a>
+  <a href="chapter8.html">Chapter 8 — The Veil of Immensity</a>
+  <a href="chapter9.html">Chapter 9 — Between Two Worlds</a>
+  <a href="chapter10.html">Chapter 10 — The Threshold Beyond</a>
+  <a href="chapter11.html">Chapter 11 — The Ocean of Threads</a>
+  <a href="chapter12.html">Chapter 12 — The Coming of the Unmakers</a>
+  <a href="chapter13.html">Chapter 13 — The Drowning of Light</a>
+  <a href="chapter14.html">Chapter 14 — The Hollow Silence</a>
+  <a href="chapter15.html">Chapter 15 — The Realm Beneath Realms</a>
+  <a href="chapter16.html">Chapter 16 — The Root of All Things</a>
+  <a href="chapter17.html">Chapter 17 — The Thread Between</a>
+  <a href="chapter18.html">Chapter 18 — Threads in Tandem</a>
+  <a href="chapter19.html">Chapter 19 — Fever and Threads</a>
+  <a href="chapter20.html">Chapter 20 — Threads Between Worlds</a>
+  <a href="chapter21.html">Chapter 21 — The Unraveling</a>
+  <a href="chapter22.html">Chapter 22 — Fractures in Time</a>
+  <a href="chapter23.html">Chapter 23 — The Nexus of Selves</a>
+  <a href="chapter24.html">Chapter 24 — Assault Across the Weave</a>
+  <a href="chapter25.html">Chapter 25 — The Shattered Convergence</a>
+  <a href="chapter26.html">Chapter 26 — Baby Threads</a>
+  <a href="chapter27.html">Chapter 27 — Threads in Tiny Hands</a>
+  <a href="chapter28.html">Chapter 28 — Shadows at the Edge</a>
+  <a href="chapter29.html">Chapter 29 — Flickers in the Mind</a>
+  <a href="chapter30.html">Chapter 30 — Awakening Threads</a>
+  <a href="chapter31.html">Chapter 31 — Convergence of Shadows</a>
+  <a href="chapter32.html">Chapter 32 — Blackened Strands and New Horizons</a>
+  <a href="chapter33.html">Chapter 33 — Weaving the Fractured</a>
+  <a href="chapter34.html">Chapter 34 — The Assault Across Threads</a>
+  <a href="chapter35.html">Chapter 35 — The Crucible of Threads</a>
+  <a href="chapter36.html">Chapter 36 — The Loom Unleashed</a>
+  <a href="chapter37.html">Chapter 37 — Architect of the Loom</a>
+  <a href="chapter38.html">Chapter 38 — The Heart of the Loom</a>
+</div>
 
 </body>
 </html>
