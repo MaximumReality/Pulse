@@ -54,13 +54,27 @@
       margin: 0.3rem 0.6rem;
       font-size: 0.95rem;
     }
-    .song-container {
+    /* Embedded video box */
+    .video-container {
+      position: relative;
+      width: 70%;
+      max-width: 600px;
+      padding-bottom: 70%; /* square-ish aspect ratio */
       margin: 2rem auto;
-      max-width: 700px;
-      border: 2px solid #66ffcc;
-      padding: 0.5rem;
-      box-shadow: 0 0 20px #66ffcc;
-      border-radius: 6px;
+      background-color: #000;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .song-credit {
+      font-size: 0.9rem;
+      color: #ff99cc;
+      margin-top: 0.5rem;
+      font-style: italic;
     }
   </style>
 </head>
@@ -76,12 +90,12 @@
 
   <p>And now, the journey is complete. Yet in every ending, new threads shimmer, hinting at worlds waiting to be touched, lives waiting to be healed, realities waiting to be woven.</p>
 
-  <h2>Listen: Echoes in the Night (Confirmations in Solitude)</h2>
-  <div class="song-container">
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-      src="https://www.youtube.com/embed/mPrFvkLQwZc?rel=0&autoplay=0&controls=1">
-    </iframe>
+  <h2>Listen: Echoes in the Night</h2>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/mPrFvkLQwZc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+  <div class="song-credit">This song was written by Lori Sifuentes</div>
 
   <h2>Chapters</h2>
   <div class="chapter-links">
@@ -125,7 +139,7 @@
     <a href="chapter38.html">Chapter 38</a>
   </div>
 
-  <p class="thank-you">Thank you for journeying through the Maximum Reality Universe. The Loom awaits within you.</p>
+  <p class="thank-you">Thank you for journeying through Pulse of Connection and the Maximum Reality Universe. The Loom awaits within you.</p>
 
 </body>
 </html>
